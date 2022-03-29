@@ -13,6 +13,7 @@ module.exports = {
         extensions: ['.js', '.jsx'],
         alias:{
             '@styles': path.resolve(__dirname, 'src/styles/'),
+            '@containers': path.resolve(__dirname, 'src/containers/'),
         }
     },
     module: {
@@ -31,7 +32,7 @@ module.exports = {
                 },  
             },   
             {
-                test: /\.(css|s[ac]ss|styl)$/i,
+                test: /\.(css|s[ac]ss|styl)$/,
                 use:[
                     "style-loader",
                     "css-loader",

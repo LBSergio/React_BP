@@ -1,9 +1,13 @@
 import React from 'react';
-import '@styles/global.scss'
+import { Layout } from '@containers/layout';
+import { Login } from '@containers/login';
+import '@styles/global.css'
 
 const App = () => {
     return(
-        <h1>Hola mundo, cambiado</h1>
+        <Layout>
+            <Login/>
+        </Layout>
     );
 }
 
