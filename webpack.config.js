@@ -17,8 +17,8 @@ module.exports = {
             '@containers': path.resolve(__dirname, 'src/containers/'),
             '@components': path.resolve(__dirname, 'src/components/'),
             '@pages': path.resolve(__dirname, 'src/pages/'),
-            '@icons': path.resolve(__dirname, 'src/icons/'),
-            '@logos': path.resolve(__dirname, 'src/logos/'),
+            '@icons': path.resolve(__dirname, 'src/assets/icons/'),
+            '@logos': path.resolve(__dirname, 'src/assets/logos/'),
         }
     },
     module: {
@@ -43,7 +43,11 @@ module.exports = {
                     "css-loader",
                     "sass-loader",
                 ],
-            }
+            },
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                type: 'asset',
+            },
         ],
     },
     plugins:[

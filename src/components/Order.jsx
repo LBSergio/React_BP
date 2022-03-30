@@ -1,5 +1,6 @@
 import React from 'react';
 import '@styles/order.scss';
+import flecha from '@icons/flechita.svg';
 
 const Order = () => {
     return (
@@ -9,7 +10,7 @@ const Order = () => {
                 <span>6 articles</span>
             </p>
             <p>$560,00</p>
-            <img src='@icons/flechita.svg' alt='Arrow'/>
+            <img src={ flecha } alt='Arrow'/>
         </div>
     );
 };
