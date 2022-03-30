@@ -5,15 +5,15 @@ const Menu = () => {
     return (
         <div className='Menu'>
             <ul>
-                <il>
+                <li>
                     <a href='/' className='title'>My orders</a>
-                </il>
-                <il>
+                </li>
+                <li>
                     <a href='/'>My account</a>
-                </il>
-                <il>
+                </li>
+                <li>
                     <a href='/'>Sign out</a>
-                </il>
+                </li>
             </ul>
         </div>
     );
