@@ -3,7 +3,7 @@ import ProductInfo from '@components/ProductInfo';
 import '@styles/productDetail.scss';
 import close from '@icons/icon_close.png';
 
-const ProductInfo = () => {
+const ProductDetail = () => {
     return (
         <aside className='ProductDetail'>
             <div className='ProductDetail-close'>
@@ -14,4 +14,4 @@ const ProductInfo = () => {
     );
 };
 
-export { ProductInfo };
+export { ProductDetail };
