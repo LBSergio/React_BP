@@ -11,7 +11,8 @@ const ProductItem = ({ product }) => {
 
     return (
         <div className='ProductItem'>
-            <img src={product.images[0]} alt={product.title}/>
+            {/*No muestra la imágenes porque en la API esta vacío ese campo */}
+            <img src={product.images[0]} alt={product.title}/> 
             <div className='product-info'>
                 <div>
                     <p>${product.price}</p>
