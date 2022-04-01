@@ -7,6 +7,7 @@
 	position: absolute;
 	top: 60px;
 	right: 50px;
+	background-color: rgba(255,255,255, 0.90);
 }
 .Menu ul {
 	list-style: none;
@@ -19,6 +20,7 @@
 .Menu ul li:nth-child(1),
 .Menu ul li:nth-child(2) {
 	font-weight: bold;
+	font-size: var(--md);
 }
 .Menu ul li:last-child {
 	padding-top: 20px;
@@ -26,7 +28,8 @@
 }
 .Menu ul li:last-child a {
 	color: var(--hospital-green);
-	font-size: var(--sm);
+	font-size: var(--lg);
+	font-weight: bold;
 }
 .Menu ul li a {
 	color: var(--back);
