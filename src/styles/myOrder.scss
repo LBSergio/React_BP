@@ -4,6 +4,16 @@
 	box-sizing: border-box;
 	position: absolute;
 	right: 0;
+	background-color: white;
+	top: 60px;
+	bottom: auto;
+	border-radius: 6px;
+	border: 1px solid var(--very-light-pink);
+	overflow-y: auto;
+	height: 350px;
+}
+.MyOrder::-webkit-scrollbar{
+	display: none;
 }
 .title-container {
 	display: flex;
