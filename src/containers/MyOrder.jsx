@@ -22,7 +22,6 @@ const MyOrder = () => {
             <div className='my-order-content'>
                 { state.cart.map((product, index) =>(
                     <OrderItem product={ product } key={ index } indexValue={index} />
-                    
                 )) }                
                 <div className='order'>
                     <p>
