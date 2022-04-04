@@ -1,13 +1,13 @@
 import React from 'react';
 import { Header } from '@components/Header';
 
-const Layout = ({children}) => {
+const Capsula = ({children}) => {
     return(
-        <div className='Layout'>
+        <div className='Capsula'>
             <Header/>
             {children}
         </div>
     );
 };
 
-export { Layout };
+export { Capsula };

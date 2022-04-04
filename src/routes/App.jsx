@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Layout } from './src/containers/Layout';
+import { Capsula } from '@containers/Capsula';
 import { Login } from '@pages/Login';
 import { RecoveryPassword } from '@pages/RecoveryPassword';
 import { Home } from '@pages/Home';
@@ -20,7 +20,7 @@ const App = () => {
     return(
         <AppContext.Provider value={ initialState }>
             <BrowserRouter>
-                <Layout>
+                <Capsula>
                     <Routes>
                             <Route exact path='/' element={ <Home/> }/>
                             <Route exact path='/login' element={ <Login/> }/>
@@ -33,7 +33,7 @@ const App = () => {
                             <Route exact path='/orders' element={ <Orders/> }/>
                             <Route path='*' element={ <NotFound/> }/>
                     </Routes>   
-                </Layout>         
+                </Capsula>         
             </BrowserRouter>
         </AppContext.Provider>
     );
